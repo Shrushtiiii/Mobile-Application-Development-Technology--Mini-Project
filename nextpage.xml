@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFBBDEFB">
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Health Matters Clinic 🏥"
+        android:textColor="#D81B60"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <!-- Username Display -->
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username Placeholder"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Image at the top -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/textViewUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nextpage" />
+
+    <!-- Buttons -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="32dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
+
+        <!-- Profile Button -->
+        <Button
+            android:id="@+id/buttonProfile"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:text="Profile"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#FF0D47A1"
+            android:textAllCaps="true"
+            android:textColor="@color/white"/>
+
+        <!-- Appointments Button -->
+        <Button
+            android:id="@+id/buttonAppointments"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:text="Appointments"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#FFF57F17"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <!-- Bookings Button -->
+        <Button
+            android:id="@+id/buttonBookings"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:text="Bookings"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#FFFFF176"
+            android:textAllCaps="true"
+            android:textColor="#59616A"/>
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+
+            android:text="Logout"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#FF0000"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/titleTextView2"
+        android:layout_width="395dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="322dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Providing services 24x7 for You 👩‍⚕️"
+        android:textColor="#D81B60"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

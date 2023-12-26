@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFBBDEFB">
+    <!-- Username Display -->
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username Placeholder"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Book your Appointments"
+        android:textColor="#D81B60"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <!-- Image at the top -->
+
+    <!-- List of Purposes with Book Button and Date Entry -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/appoinment" />
+
+    <LinearLayout
+        android:id="@+id/purposesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="16dp">
+
+        <!-- Regular Checkup -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="Regular Checkup">
+
+        <TextView
+                android:id="@+id/textViewRegularCheckup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regular Checkup"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonBookRegularCheckup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Book"
+                android:backgroundTint="#FF0D47A1"
+                android:textAllCaps="true"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/editTextDateRegularCheckup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewRegularCheckup"
+                android:layout_marginTop="8dp"
+                android:hint="Date"/>
+
+        </RelativeLayout>
+
+        <!-- Fever -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="Fever">
+
+
+        <TextView
+                android:id="@+id/textViewFever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fever"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonBookFever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Book"
+                android:backgroundTint="#FF0D47A1"
+                android:textAllCaps="true"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/editTextDateFever"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFever"
+                android:layout_marginTop="8dp"
+                android:hint="Date"/>
+
+        </RelativeLayout>
+
+        <!-- Eye Checkup -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="Eye Checkup">
+
+
+        <TextView
+                android:id="@+id/textViewEyeCheckup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eye Checkup"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonBookEyeCheckup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Book"
+                android:backgroundTint="#FF0D47A1"
+                android:textAllCaps="true"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/editTextDateEyeCheckup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewEyeCheckup"
+                android:layout_marginTop="8dp"
+                android:hint="Date"/>
+
+        </RelativeLayout>
+
+        <!-- Accident -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="Accident">
+
+
+        <TextView
+                android:id="@+id/textViewAccident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accident"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonBookAccident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Book"
+                android:backgroundTint="#FF0D47A1"
+                android:textAllCaps="true"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/editTextDateAccident"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewAccident"
+                android:layout_marginTop="8dp"
+                android:hint="Date"/>
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_marginTop="0dp"
+            android:onClick="onBackPressed"
+            android:backgroundTint="#FF0D47A1"
+            android:textAllCaps="true"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

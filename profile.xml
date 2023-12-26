@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFBBDEFB">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Health Matters Clinic 🏥"
+        android:textColor="#D81B60"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/homepage"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name"/>
+
+    <!-- ScrollView to make content below scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Existing TextViews -->
+            <TextView
+                android:id="@+id/textViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID: Placeholder"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewId"
+                android:layout_marginTop="8dp"
+                android:text="Name: Placeholder"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/textViewPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewName"
+                android:layout_marginTop="8dp"
+                android:text="Phone Number: Placeholder"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/textViewUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewPhoneNumber"
+                android:layout_marginTop="8dp"
+                android:text="Username: Placeholder"
+                android:textSize="18sp"/>
+
+            <!-- New TextViews for Additional Details -->
+            <TextView
+                android:id="@+id/textViewAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewUsername"
+                android:layout_marginTop="8dp"
+                android:text="Address: Placeholder"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/textViewAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewAddress"
+                android:layout_marginTop="8dp"
+                android:text="Age: Placeholder"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/textViewAadharNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewAge"
+                android:layout_marginTop="8dp"
+                android:text="Aadhar Number: Placeholder"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/textViewFathersName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewAadharNumber"
+                android:layout_marginTop="8dp"
+                android:text="Father's Name: Placeholder"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF0D47A1"
+        android:textAllCaps="true"
+        android:textColor="@color/white"/>
+</LinearLayout>
